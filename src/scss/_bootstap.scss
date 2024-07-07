@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  color: green;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+main {
+  background-color: #846eda;
+  height: calc(100vh - 90px);
+          overflow: scroll;
+
+  .login {
+    border: 2px solid pink;
+    height: 100%;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    .input {
+      width: 50vw;
+    }
+    .registerlogin {
+      background-color: #ffffff;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    
+    }
+    .diamond {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.footer {
+  border: 3px solid green;
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  height: 30px;
+}
