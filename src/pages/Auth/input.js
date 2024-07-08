@@ -1,5 +1,3 @@
-
-
 export default function input({ name, labletext, password, type, onChange }) {
   return (
     <>

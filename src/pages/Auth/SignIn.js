@@ -25,7 +25,7 @@ export default function SignIn() {
     <>
       <div className="registerlogin col-12 p-4 d-flex flex-column align-items-center justify-content-center">
         <Toptext Signlogin="Signin" />
-  
+
         <Input
           name="name"
           labletext="Full Name"
@@ -54,9 +54,9 @@ export default function SignIn() {
           <tbody>
             {todos.map((todo, index) => (
               <tr key={index}>
-                <td>Name: {todo.name}</td>
-                <td>Email: {todo.email}</td>
-                <td>Password: {todo.password}</td>
+                <td>{todo.name}</td>
+                <td>{todo.email}</td>
+                <td>{todo.password}</td>
               </tr>
             ))}
           </tbody>

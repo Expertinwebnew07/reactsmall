@@ -9,19 +9,20 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  
 }
 main {
   background-color: #846eda;
   height: calc(100vh - 90px);
-          overflow: scroll;
-
+  
   .login {
     border: 2px solid pink;
     height: 100%;
     display: flex;
     align-item: center;
     justify-content: center;
+    overflow: scroll;
+
     .input {
       width: 50vw;
     }

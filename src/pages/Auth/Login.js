@@ -40,8 +40,23 @@ export default function Login() {
           type="password"
           value={details.password}
           onChange={handelChange}
+          password="Forgot Password"
         />
         <Bottomtext Signlogin={"Login"} click={storedata} />
+        <table>
+          <thead>
+             <th>Email</th>
+            <th>Password</th>
+          </thead>
+          <tbody>
+            {todos.map((todo, index) => (
+              <tr key={index}>
+                 <td>{todo.email}</td>
+                <td>{todo.password}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>        
       </div>
     </>
   );

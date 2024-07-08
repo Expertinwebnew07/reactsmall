@@ -9,18 +9,14 @@ export default function ForgetPassword() {
 
   const handleChange = (e) => {
     e.preventDefault();
-    const { name, value } = e.target;
-
-    setDetails((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-    console.log(name, value);
+    setDetails({ ...details, [e.target.name]: e.target.value });
+    let a = (e.target.name, e.target.value);
+    console.log(a);
   };
 
   const storeData = (e) => {
     e.preventDefault();
-    setTodos((prevTodos) => [...prevTodos, details]);
+    setTodos([...todos, details]);
     console.log(todos);
   };
 
@@ -35,6 +31,18 @@ export default function ForgetPassword() {
           onChange={handleChange}
         />
         <Bottomtext Signlogin={"Forgot Password"} click={storeData} />
+        <table>
+          <thead>
+            <th>Email</th>
+          </thead>
+          <tbody>
+            {todos.map((todo, index) => (
+              <tr key={index}>
+                <td>{todo.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </>
   );
